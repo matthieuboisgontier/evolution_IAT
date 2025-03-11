@@ -4,7 +4,7 @@
 This repository contains data and an `R` script to examine the evolution of explicit and implicit attitudes toward physical disability in clinicians, rehabilitation assistants, and individuals in other occupations using the [Physical Disability IAT dataset](https://doi.org/10.17605/OSF.IO/Y9HIQ), collected from 2006 to 2024 via the [Project Implicit](https://implicit.harvard.edu/implicit/selectatest.html) and made available on the Open Science Framework (OSF) under the CC0 1.0 Universal license.
 
 ## Data
-The script expect SAV file that is subsequently imported by `R`.
+The R script expect the SAV filel that are subsequently imported by `R`.
 
 ## Files
 Disability_IAT.public.2004 to Disability_IAT.public.2024
