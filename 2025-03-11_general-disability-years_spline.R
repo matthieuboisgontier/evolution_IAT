@@ -415,7 +415,16 @@ disability_type_counts <- count_percentage(data_iat_merged, disability_type)
 print(birthsex_counts, n = Inf)
 print(disability_type_counts, n = Inf)
 
+# Count the number of observations per year and occupation group
+yearly_counts <- data_iat_merged %>%
+  group_by(year, occupation_code) %>%
+  summarise(n = n(), .groups = "drop") %>%
+  pivot_wider(names_from = occupation_code, values_from = n, values_fill = 0)
 
+# View the table
+print(yearly_counts)
+
+  
 ### STATISTICAL MODELS ###
 ## Spline analysis
 # Implicit attitudes
